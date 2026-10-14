@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nithyashree N | Software Engineer</title>
+<meta name="description" content="Portfolio of Nithyashree N, a software engineer working on cloud-native systems, backend engineering and applied AI.">
+<meta property="og:title" content="Nithyashree N | Software Engineer">
+<meta property="og:description" content="Cloud, backend and applied AI projects.">
+<meta property="og:type" content="website">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0e1424;--bg2:#141b30;--ink:#f6efe2;--mute:#b4b0c4;--line:#ffffff1f;--lav:#a79bd6;--blue:#6ea0ff;--amber:#eba24b;--card:#171f38;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
+:root[data-theme=light]{--bg:#f6efe2;--bg2:#efe5d2;--ink:#161c33;--mute:#555a72;--line:#161c3326;--lav:#6c5bb5;--blue:#2c62d6;--amber:#b76a0c;--card:#fffaf0;color-scheme:light}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 Inter,system-ui,sans-serif;overflow-x:hidden;transition:background .4s,color .4s}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.1;margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+section{padding:110px 0}
+h2{font-size:clamp(2rem,4.5vw,3.2rem);margin-bottom:14px}
+.lead{color:var(--mute);max-width:60ch;margin:0 0 44px}
+.alt{background:var(--bg2)}
+#prog{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--blue),var(--lav),var(--amber));z-index:60}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:env(safe-area-inset-top,0px);transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
+nav.on{background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);border-color:var(--line)}
+.nb{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:Fraunces,serif;font-size:1.25rem;font-weight:600;text-decoration:none}
+.links{display:flex;gap:26px;align-items:center}
+.links a{text-decoration:none;font-size:.95rem;color:var(--mute);padding:6px 0;border-bottom:2px solid transparent}
+.links a.act,.links a:hover{color:var(--ink);border-color:var(--amber)}
+.ic{display:flex;gap:8px;align-items:center}
+.ib{background:none;border:1px solid var(--line);color:var(--ink);width:40px;height:40px;border-radius:50%;cursor:pointer;display:grid;place-items:center;text-decoration:none;font-size:.8rem;font-weight:600}
+.ib:hover{border-color:var(--amber)}
+#burger{display:none}
+@media(max-width:860px){#burger{display:grid}.links{position:fixed;inset:68px 0 auto 0;background:var(--bg);flex-direction:column;padding:20px 24px 28px;gap:6px;border-bottom:1px solid var(--line);transform:translateY(-130%);transition:transform .35s;align-items:flex-start}.links.open{transform:none}.links a{padding:12px 0;font-size:1.1rem;width:100%}}
+.hero{min-height:100svh;display:flex;align-items:center;padding:110px 0 60px;position:relative;overflow:hidden}
+.hg{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+@media(max-width:860px){.hg{grid-template-columns:1fr;gap:36px}}
+.stat{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:99px;padding:6px 14px;font-size:.88rem;color:var(--mute)}
+.dot{width:8px;height:8px;border-radius:50%;background:#58d68d;box-shadow:0 0 0 0 #58d68d88;animation:pu 2s infinite}
+@keyframes pu{70%{box-shadow:0 0 0 9px #0000}}
+h1{font-size:clamp(2.5rem,6.2vw,4.8rem);margin:22px 0 18px;letter-spacing:-.02em}
+.cyc{height:1.7em;color:var(--lav);font-weight:500;font-size:1.15rem;margin-bottom:10px}
+.cyc span{display:inline-block;transition:opacity .4s,transform .4s}
+.cyc .o{opacity:0;transform:translateY(8px)}
+.hero p.sub{color:var(--mute);max-width:52ch;margin:0 0 30px}
+.btns{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.b{display:inline-flex;align-items:center;min-height:48px;padding:0 26px;border-radius:99px;font-weight:600;text-decoration:none;border:1px solid var(--line);cursor:pointer;background:none;color:var(--ink);font-size:1rem;font-family:inherit;transition:transform .2s,background .2s}
+.b:hover{transform:translateY(-2px)}
+.b.p{background:var(--amber);color:#1a1205;border-color:var(--amber)}
+.b.off{opacity:.55;cursor:not-allowed}
+.sm{font-size:.95rem;color:var(--mute)}
+.in{opacity:0;transform:translateY(22px);animation:up .9s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes up{to{opacity:1;transform:none}}
+.pw{position:relative;justify-self:center;width:min(100%,380px);transform:translate(var(--px,0),var(--py,0));transition:transform .3s ease-out}
+.fl{animation:fl 7s ease-in-out infinite;position:relative}
+@keyframes fl{50%{transform:translateY(-14px) rotate(.8deg)}}
+.pw::before{content:"";position:absolute;inset:-14%;background:radial-gradient(closest-side,#eba24b55,transparent);z-index:0;animation:gw 6s ease-in-out infinite}
+@keyframes gw{50%{opacity:.55}}
+.fr{position:relative;border-radius:200px 200px 22px 22px;overflow:hidden;aspect-ratio:3/4;z-index:1;box-shadow:0 30px 70px #0006}
+.fr img{width:100%;height:100%;display:block;object-fit:cover}
+.ol{position:absolute;inset:-12px;border-radius:212px 212px 30px 30px;z-index:2;pointer-events:none}
+.ol rect{fill:none;stroke:var(--amber);stroke-width:1.5;stroke-dasharray:6 10;animation:dash 24s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-320}}
+.lf{position:absolute;width:10px;height:16px;border-radius:0 90% 0 90%;background:var(--amber);opacity:.0;animation:lf 11s linear infinite;z-index:3}
+@keyframes lf{0%{opacity:0;transform:translate(0,20px) rotate(0)}15%{opacity:.7}100%{opacity:0;transform:translate(-40px,-340px) rotate(260deg)}}
+@media(max-width:860px){.lf,.pw::before{display:none}.pw{width:min(78%,300px);transform:none!important}.fl{animation-duration:9s}section{padding:80px 0}}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}
+.rv.v{opacity:1;transform:none}
+.ab{display:grid;grid-template-columns:1.2fr .8fr;gap:56px}
+@media(max-width:860px){.ab{grid-template-columns:1fr;gap:34px}}
+.ab p{margin:0 0 18px;max-width:62ch}
+.care{display:grid;gap:10px}
+.care button{text-align:left;font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;cursor:pointer;transition:border-color .2s}
+.care button:hover,.care button[aria-expanded=true]{border-color:var(--lav)}
+.care small{display:none;color:var(--mute);margin-top:6px;line-height:1.5}
+.care button[aria-expanded=true] small{display:block}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chip{font-size:.85rem;padding:5px 12px;border-radius:99px;border:1px solid var(--line);color:var(--mute)}
+.tl{position:relative;padding-left:34px;display:grid;gap:22px}
+.tl::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--blue),var(--lav),var(--amber))}
+.xp{position:relative;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 26px}
+.xp::before{content:"";position:absolute;left:-34px;top:28px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:3px solid var(--amber)}
+.xp summary{cursor:pointer;list-style:none}
+.xp summary::-webkit-details-marker{display:none}
+.xp h3{font-size:1.4rem}
+.meta{color:var(--mute);font-size:.92rem;margin-top:4px}
+.xp ul{margin:16px 0 0;padding-left:20px;color:var(--mute)}
+.xp li{margin-bottom:6px}
+.hint{color:var(--lav);font-size:.88rem;margin-top:10px;display:block}
+.pg{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:22px}
+.pc{position:relative;text-align:left;font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:16px;padding:0;cursor:pointer;overflow:hidden;transition:transform .3s,border-color .3s,box-shadow .3s}
+.pc:hover{transform:translateY(-6px);border-color:var(--amber);box-shadow:0 18px 40px #0004}
+.pv{height:120px;background:linear-gradient(135deg,var(--c1),var(--c2));display:flex;align-items:flex-end;padding:14px 20px;position:relative;overflow:hidden}
+.pv svg{position:absolute;right:-10px;top:0;height:100%;opacity:.5}
+.pv b{font-size:.82rem;background:#0e1424b3;color:#f6efe2;padding:4px 10px;border-radius:99px;position:relative;font-weight:500}
+.pb{padding:20px 22px 24px}
+.pb h3{font-size:1.3rem;margin-bottom:8px}
+.pb p{margin:0 0 14px;color:var(--mute);font-size:.96rem}
+dialog{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:20px;padding:0;width:min(780px,calc(100% - 28px));max-height:88vh}
+dialog::backdrop{background:#050810cc}
+dialog[open]{animation:up .4s forwards}
+.dc{padding:30px clamp(20px,4vw,40px) 36px;overflow:auto;max-height:88vh}
+.x{position:absolute;right:14px;top:14px}
+.dc h3{font-size:2rem;margin:6px 0 14px;padding-right:44px}
+.dc h4{margin:24px 0 6px;font-size:1rem;color:var(--amber);font-weight:600}
+.dc p,.dc li{color:var(--mute);margin:0 0 6px}
+.dc ul{padding-left:20px;margin:0}
+.note{font-size:.85rem;border-left:3px solid var(--lav);padding:6px 12px;color:var(--mute);margin-top:18px}
+.flow{display:flex;gap:6px;align-items:stretch;margin:20px 0 8px}
+.fn{flex:1;min-width:0;font:inherit;font-size:.9rem;text-align:center;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 8px;cursor:pointer;transition:border-color .2s,transform .2s}
+.fn:hover,.fn.on{border-color:var(--blue);transform:translateY(-3px)}
+.fn i{display:block;font-style:normal;font-size:.72rem;color:var(--mute);margin-top:4px}
+.cn{width:26px;align-self:center;height:2px;background:repeating-linear-gradient(90deg,var(--blue) 0 6px,#0000 6px 12px);background-size:12px 2px;animation:fw 1s linear infinite;flex:none}
+@keyframes fw{to{background-position:12px 0}}
+@media(max-width:700px){.flow{flex-direction:column}.cn{width:2px;height:22px;align-self:center;background:repeating-linear-gradient(180deg,var(--blue) 0 6px,#0000 6px 12px)}}
+.ex{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 22px;min-height:96px;margin-top:14px}
+.ex b{color:var(--amber)}
+.sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.sg{border-top:2px solid var(--lav);padding-top:16px}
+.sg h3{font-size:1.15rem;margin-bottom:12px}
+.sg .chip{display:inline-block;margin:0 6px 8px 0;transition:border-color .2s,color .2s,transform .2s}
+.sg .chip:hover{border-color:var(--amber);color:var(--ink);transform:translateY(-2px)}
+.cr{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+@media(max-width:760px){.cr{grid-template-columns:1fr}}
+.cd{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px}
+.cd h3{font-size:1.3rem;margin-bottom:8px}
+.cd p{color:var(--mute);margin:0 0 8px}
+.ct{text-align:center}
+.ct h2{font-size:clamp(2.2rem,5.5vw,4rem)}
+.ct .lead{margin:0 auto 32px}
+.ct .btns{justify-content:center}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mute);font-size:.9rem}
+.fo{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;align-items:center}
+#top{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));opacity:0;pointer-events:none;transition:opacity .3s;background:var(--card);z-index:40}
+#top.on{opacity:1;pointer-events:auto}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.in,.rv{opacity:1;transform:none}.lf{display:none}}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+<nav id="nav"><div class="wrap nb">
+<a class="logo" href="#home">Nithyashree N</a>
+<div class="links" id="links" aria-label="Main"></div>
+<div class="ic"><span id="soc" class="ic"></span><button class="ib" id="th" aria-label="Switch light or dark theme">◐</button><button class="ib" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="links">☰</button></div>
+</div></nav>
+
+<main>
+<header class="hero" id="home"><div class="wrap hg">
+<div>
+<span class="stat in" style="animation-delay:.1s"><i class="dot"></i><span id="status"></span></span>
+<h1 class="in" style="animation-delay:.25s">Building intelligent systems Engineering what’s next.</h1>
+<div class="cyc in" style="animation-delay:.4s" aria-live="off"><span id="cyc">Software Engineering</span></div>
+<p class="sub in" style="animation-delay:.5s">I’m Nithyashree, a software engineer interested in cloud-native systems, backend engineering, and AI-powered solutions. I enjoy turning complex problems into reliable, practical software.</p>
+<div class="btns in" style="animation-delay:.65s"><a class="b p" href="#projects">Explore My Work</a><a class="b" id="resume1" href="#contact">View Resume</a><a class="sm" href="#contact">Contact Me</a></div>
+</div>
+<div class="pw in" id="pw" style="animation-delay:.5s">
+<span class="1f" style="right:6%;bottom:10%"></span><span class="lf" style="left:2%;bottom:30%;animation-delay:3s"></span><span class="lf" style="right:-2%;bottom:50%;animation-delay:6s"></span><span class="lf" style="left:10%;bottom:0;animation-delay:8s"></span>
+<span class="lf" style="left:15%;bottom:10%;animation-delay:11s"></span>
+<span class="lf" style="right:15%;bottom:20%;animation-delay:2s"></span>
+<span class="lf" style="left:40%;bottom:5%;animation-delay:4s"></span>
+<span class="lf" style="right:30%;bottom:15%;animation-delay:15s"></span>
+<span class="lf" style="left:70%;bottom:0;animation-delay:7s"></span>
+<span class="lf" style="right:5%;bottom:35%;animation-delay:9s"></span>
+<div class="fl"><div class="fr"><img src="portrait.jpg" width="640" height="853" alt="Ghibli-style illustrated portrait of Nithyashree standing under a dried-flower arch"></div>
+<svg class="ol" viewBox="0 0 100 100" preserveAspectRatio="none" width="100%" height="100%" aria-hidden="true"><rect x=".5" y=".5" width="99" height="99" rx="40" vector-effect="non-scaling-stroke"/></svg></div>
+</div>
+</div></header>
+
+<section id="about"><div class="wrap ab">
+<div class="rv"><h2>About</h2>
+<p>I’m a Computer Science graduate specializing in Cloud Computing, with hands-on experience in software development, cloud automation, and AI-driven applications.</p>
+<p>During my internship at Titan Company Limited, I worked on backend services, AWS workflows, automation, monitoring, and reporting. These experiences strengthened my interest in building systems that are useful, observable, and reliable.</p>
+<p>I’m particularly interested in the intersection of software engineering, cloud infrastructure, and applied AI. I enjoy understanding how systems work, solving technical problems, and continuously improving my engineering skills.</p>
+<p class="meta">B.Tech in Computer Science and Engineering (Cloud Computing), SRM Institute of Science and Technology, Chennai, 2021–2025.</p>
+<div class="chips"><span class="chip">Backend development</span><span class="chip">AWS architecture</span><span class="chip">Generative AI and RAG</span><span class="chip">Observability</span><span class="chip">Algorithms</span><span class="chip">System design</span></div></div>
+<div class="rv"><h3 style="margin-bottom:14px;font-size:1.4rem">What I care about</h3><div class="care" id="care"></div></div>
+</div></section>
+
+<section class="alt" id="experience"><div class="wrap"><h2 class="rv">Experience</h2><p class="lead rv">Select a role to see more.</p><div class="tl" id="tl"></div></div></section>
+
+<section id="projects"><div class="wrap"><h2 class="rv">Projects</h2><p class="lead rv">Open a project for the problem, my contribution, and the outcome.</p><div class="pg" id="pg"></div></div></section>
+
+<section class="alt" id="arch"><div class="wrap"><h2 class="rv">How the AI Issue Resolution Bot fits together</h2>
+<p class="lead rv">Click a block. The overall layout is illustrative; blocks marked “confirmed” come from the project description.</p>
+<div class="flow rv" id="flow"></div><div class="ex" id="ex" aria-live="polite">Pick a block to read what it does.</div></div></section>
+
+<section id="skills"><div class="wrap"><h2 class="rv">Skills</h2><p class="lead rv">Tools I have used in projects and internships.</p><div class="sk" id="sk"></div></div></section>
+
+<section class="alt" id="publication"><div class="wrap"><h2 class="rv">Publication and certification</h2><p class="lead rv"> </p><div class="cr" id="cr"></div></div></section>
+
+<section id="contact" class="ct"><div class="wrap"><h2 class="rv">Have an interesting problem to solve?</h2>
+<p class="lead rv">I’m interested in opportunities where I can build useful software, contribute to meaningful projects, and keep growing as an engineer.</p>
+<div class="btns rv" id="cb"></div></div></section>
+</main>
+
+<footer><div class="wrap fo"><span>© <span id="yr"></span> Nithyashree N</span><span class="ic" id="soc2"></span></div></footer>
+<button class="ib" id="top" aria-label="Back to top">↑</button>
+<dialog id="dlg" aria-labelledby="dt"><button class="ib x" id="dx" aria-label="Close project details">✕</button><div class="dc" id="dc"></div></dialog>
+
+<script>
+// ===== EDIT YOUR DETAILS HERE =====
+const CONFIG={
+ status:"Open to software engineering roles",
+ email:"nithyashree.nn27@gmail.com",      // e.g. "you@example.com"
+ linkedin:"https://www.linkedin.com/in/nithyashree-nn27",   // full URL
+ github:"https://github.com/nithyashree-nn27",     // full URL
+ resume:"Nithyashree_Resume.pdf",     // e.g. "resume.pdf" or a public link
+ ieeeUrl:"https://ieeexplore.ieee.org/document/10860091", doi:"", certUrl:"AWS Certificate.pdf", ValidationNumber:"7463fd2db9114cf3b23f88bd7e806dfe"
+};
+const EXP=[
+{co:"Titan Company Limited (Tata)",role:"Software Development Engineer Intern",loc:"Bengaluru",when:"October 2024 – July 2025",
+ pts:["Built Python backend services.","Worked on AWS workflows and cloud automation.","Added data validation.","Monitored website performance.","Built automation, dashboards and reporting.","Worked on the AI Issue Resolution Bot and the multi-brand website monitoring system."],
+ stack:["Python","AWS","Grafana","Selenium"]},
+{co:"CloudifyOps",role:"Cloud Engineer Intern",loc:"",when:"December 2025 – February 2026",
+ pts:["Responsibilities to be added. Edit this entry in the EXP list with details you can verify."],stack:["AWS"]}];
+const PR=[
+{id:"bot",cat:"Applied AI / Backend Engineering",t:"AI Issue Resolution Bot",c:["#2c3a78","#6c5bb5"],s:"An AI-powered enterprise support tool that retrieves relevant knowledge and helps resolve support issues using retrieval-augmented generation and LLM workflows.",st:["Python","AWS Q Business","LLM APIs","RAG","FastAPI","REST APIs","RBAC"],prob:"Support teams need to find the right knowledge quickly when resolving issues.",
+ me:"Backend engineering: API integration, role-based access control and performance optimization.", hl:["Retrieval-augmented question answering","Enterprise knowledge retrieval","Backend API integration","Role-based access control","Backend performance optimization"],
+out:"A working support assistant built on retrieval and LLM workflows.",metric:{text:"50% reduction in response time after backend optimization and caching",ok:false},arch:true},
+{id:"mon",cat:"Cloud Engineering / Automation / Observability",t:"Automated Multi-Brand Website Visual Monitoring",c:["#1b4a7a","#3b82c4"],
+ s:"An automated way to capture visual changes and collect performance measurements across seven brand websites.",
+ st:["CloudWatch Synthetics","AWS Lambda","Selenium","Grafana","Amazon Timestream","PageSpeed Insights API"],
+ prob:"Several brand websites needed regular visual checks and performance data without manual effort.",
+ me:"Built and ran the monitoring workflow and dashboards.",
+ hl:["Screenshots scheduled three times daily","Seven brand websites","Homepage, product listing and product detail pages","Automated performance data collection","Dashboards for website health"],
+ out:"Ongoing visibility into the visual state and performance of seven sites.",
+ flow:["Schedule","Synthetics / Lambda + Selenium","Screenshots","PageSpeed API","Timestream","Grafana"]},
+{id:"dedup",cat:"Machine Learning / Research",t:"Intelligent Image Deduplication",c:["#5a3a7a","#b07bc4"],
+ s:"Research on deep-learning features and similarity techniques to find duplicate or visually similar images, with cloud storage savings in mind.",
+ st:["PyTorch","ResNet","CNNs","pHash","KNN","Cosine similarity"],
+ prob:"Duplicate and near-duplicate images waste storage.",
+ me:"Research and implementation of feature extraction and similarity comparison.",
+ hl:["Visual feature extraction","Similarity comparison","Duplicate image identification","Possible storage optimization uses"],
+ out:"Published at IEEE in 2024: “Intelligent Image Deduplication Using Deep Learning and Similarity-Based Techniques”."},
+{id:"cost",cat:"Cloud Optimization",t:"Automation Cost Optimization Engine",c:["#7a4a1b","#eba24b"],
+ s:"An automated workflow that analyzes AWS resources to find underutilized ones.",
+ st:["AWS"],prob:"Idle or underused cloud resources add avoidable cost.",
+ me:"Built the resource-analysis workflow.",hl:["Automated resource analysis","Finds underutilized AWS resources"],
+ out:"The goal is to cut cost by flagging underused resources.",
+ metric:{text:"12% monthly cost saving",ok:false}},
+{id:"nlp",cat:"Generative AI",t:"NLP-Powered Query Generator",c:["#14504a","#4bb3a3"],
+ s:"A generative AI project built on AWS Bedrock.",st:["AWS Bedrock"],
+ prob:"Add the problem this solved.",me:"Add your exact contribution.",hl:["Built with AWS Bedrock"],out:"Add verified outcome details."}];
+const SK={"Programming":["Python","Java","SQL","JavaScript"],"Cloud and Infrastructure":["AWS Lambda","EC2","S3","VPC","IAM","CloudWatch"],"Backend":["FastAPI","REST APIs","Backend services","API integration"],"AI and Machine Learning":["LLMs","RAG","AWS Q Business","AWS Bedrock","PyTorch","ResNet","CNNs","Similarity-based image processing"],"Engineering Tools":["Git","GitHub","CI/CD","Selenium","Grafana","Postman"]};
+const NODES=[["User","","Asks a question or reports a support issue."],["FastAPI backend","confirmed","The Python API that receives requests, enforces role-based access control and calls the other parts. Backend performance work was done here."],["Retrieval layer","confirmed","Finds the most relevant knowledge for the question (retrieval-augmented generation), using AWS Q Business."],["Knowledge source","illustrative","Atlassian Cloud pages provide the knowledge content retrieved to answer user support queries."],["LLM","confirmed","Uses a large language model to generate responses grounded in the retrieved knowledge."],["Response","","The answer returned to the user through the API."]];
+const NAV=["Home","About","Experience","Projects","Skills","Publication","Contact"];
+// ===================================
+const $=s=>document.querySelector(s),h=(t,a={},k="")=>{const e=document.createElement(t);Object.assign(e,a);if(k)e.innerHTML=k;return e};
+const link=(u,txt,cls="b")=>u?`<a class="${cls}" href="${u}" target="_blank" rel="noopener">${txt}</a>`:`<span class="${cls} off" title="Add this link in CONFIG">${txt} (add link)</span>`;
+$("#status").textContent=CONFIG.status;$("#yr").textContent=new Date().getFullYear();
+$("#links").innerHTML=NAV.map(n=>`<a href="#${n==="Home"?"home":n.toLowerCase()}">${n}</a>`).join("");
+const soc=(CONFIG.github?`<a class="ib" href="${CONFIG.github}" target="_blank" rel="noopener" aria-label="GitHub">GH</a>`:"")+(CONFIG.linkedin?`<a class="ib" href="${CONFIG.linkedin}" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>`:"")+(CONFIG.leetcode?`<a class="ib" href="${CONFIG.leetcode}" target="_blank" rel="noopener" aria-label="LeetCode">LC</a>`:"");
+$("#soc").innerHTML=soc;$("#soc2").innerHTML=soc||"<span>Social links: add them in CONFIG</span>";
+if(CONFIG.resume)$("#resume1").href=CONFIG.resume,$("#resume1").target="_blank";
+$("#cb").innerHTML=(CONFIG.email?`<a class="b p" href="mailto:${CONFIG.email}">Email Me</a>`:link("","Email Me","b p"))+link(CONFIG.linkedin,"LinkedIn")+link(CONFIG.github,"GitHub")+link(CONFIG.leetcode,"LeetCode")+link(CONFIG.resume,"Download Resume");
+// care
+$("#care").innerHTML=[["Building useful products","I want what I build to solve a real problem for real people."],["Writing maintainable software","Code that the next person can read and change safely."],["Learning through experimentation","I try things, measure them, and keep what works."],["Improving system reliability","Good monitoring and automation so problems show up early."]].map(([a,b])=>`<button aria-expanded="false">${a}<small>${b}</small></button>`).join("");
+document.querySelectorAll("#care button").forEach(b=>b.onclick=()=>b.setAttribute("aria-expanded",b.getAttribute("aria-expanded")==="false"));
+// experience
+$("#tl").innerHTML=EXP.map((e,i)=>`<details class="xp rv" ${i===0?"open":""}><summary><h3>${e.role}</h3><div class="meta">${e.co}${e.loc?", "+e.loc:""} | ${e.when}</div><span class="hint">Show or hide details</span></summary><ul>${e.pts.map(p=>`<li>${p}</li>`).join("")}</ul><div class="chips">${e.stack.map(s=>`<span class="chip">${s}</span>`).join("")}</div></details>`).join("");
+// projects
+const art='<svg viewBox="0 0 120 120" aria-hidden="true"><g fill="none" stroke="#fff" stroke-width="1.5"><circle cx="60" cy="60" r="20"/><circle cx="60" cy="60" r="38"/><circle cx="60" cy="60" r="56"/></g></svg>';
+$("#pg").innerHTML=PR.map(p=>`<button class="pc rv" data-id="${p.id}" style="--c1:${p.c[0]};--c2:${p.c[1]}"><div class="pv">${art}<b>${p.cat}</b></div><div class="pb"><h3>${p.t}</h3><p>${p.s}</p><div class="chips" style="margin:0">${p.st.slice(0,4).map(s=>`<span class="chip">${s}</span>`).join("")}</div></div></button>`).join("");
+const dlg=$("#dlg");let opener;
+document.querySelectorAll(".pc").forEach(b=>b.onclick=()=>{opener=b;const p=PR.find(x=>x.id===b.dataset.id);
+$("#dc").innerHTML=`<span class="meta">${p.cat}</span><h3 id="dt">${p.t}</h3><p>${p.s}</p>
+<h4>Problem</h4><p>${p.prob}</p><h4>My contribution</h4><p>${p.me}</p><h4>Highlights</h4><ul>${p.hl.map(x=>`<li>${x}</li>`).join("")}</ul>
+${p.flow?`<h4>Pipeline (illustrative)</h4><div class="chips">${p.flow.map((f,i)=>`<span class="chip">${f}</span>${i<p.flow.length-1?"<span aria-hidden='true'>›</span>":""}`).join("")}</div>`:""}
+<h4>Outcome</h4><p>${p.out}</p>${p.metric&&p.metric.ok?`<p><b>${p.metric.text}</b></p>`:""}
+<h4>Technologies</h4><div class="chips" style="margin:0">${p.st.map(s=>`<span class="chip">${s}</span>`).join("")}</div>
+<div class="btns" style="margin-top:24px">${p.arch?`<a class="b p" href="#arch" id="goarch">See architecture</a>`:""}<span class="b off">Source code coming soon</span></div>`;
+const g=$("#goarch");if(g)g.onclick=()=>dlg.close();dlg.showModal()});
+$("#dx").onclick=()=>dlg.close();dlg.onclick=e=>{if(e.target===dlg)dlg.close()};dlg.onclose=()=>opener&&opener.focus();
+// architecture
+$("#flow").innerHTML=NODES.map((n,i)=>`<button class="fn" data-i="${i}">${n[0]}<i>${n[1]}</i></button>`+(i<5?'<span class="cn" aria-hidden="true"></span>':"")).join("");
+document.querySelectorAll(".fn").forEach(b=>b.onclick=()=>{document.querySelectorAll(".fn").forEach(x=>x.classList.remove("on"));b.classList.add("on");const n=NODES[b.dataset.i];$("#ex").innerHTML=`<b>${n[0]}</b>${n[1]?` (${n[1]})`:""}<br>${n[2]}`});
+// skills
+$("#sk").innerHTML=Object.entries(SK).map(([k,v])=>`<div class="sg rv"><h3>${k}</h3>${v.map(s=>`<span class="chip">${s}</span>`).join("")}</div>`).join("");
+// publication
+$("#cr").innerHTML=`<div class="cd rv"><h3>IEEE publication, 2024</h3><p>Intelligent Image Deduplication Using Deep Learning and Similarity-Based Techniques</p>${CONFIG.doi?`<p>DOI: ${CONFIG.doi}</p>`:""}<div style="margin-top:14px">${link(CONFIG.ieeeUrl,"View paper")}</div></div><div class="cd rv"><h3>AWS Certified Solutions Architect – Associate</h3><p>${CONFIG.credId?"Credential ID: "+CONFIG.credId:"Validation Number:7463fd2db9114cf3b23f88bd7e806dfe"}</p><div style="margin-top:14px">${link(CONFIG.certUrl,"Verify credential")}</div></div>`;
+// behaviour
+const reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&(e.target.classList.add("v"),io.unobserve(e.target))),{threshold:.12});
+document.querySelectorAll(".rv").forEach(e=>io.observe(e));
+const secs=[...document.querySelectorAll("main > section, header")],lk=[...document.querySelectorAll(".links a")];
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const id=e.target.id==="arch"?"projects":e.target.id;lk.forEach(a=>a.classList.toggle("act",a.getAttribute("href")==="#"+id))}}),{rootMargin:"-45% 0px -50% 0px"});
+secs.forEach(s=>so.observe(s));
+addEventListener("scroll",()=>{const y=scrollY,m=document.body.scrollHeight-innerHeight;$("#prog").style.width=(y/m*100)+"%";$("#nav").classList.toggle("on",y>30);$("#top").classList.toggle("on",y>700)},{passive:true});
+$("#top").onclick=()=>scrollTo({top:0});
+const bg=$("#burger"),ls=$("#links");bg.onclick=()=>{const o=ls.classList.toggle("open");bg.setAttribute("aria-expanded",o);bg.textContent=o?"✕":"☰"};
+ls.onclick=e=>{if(e.target.tagName==="A"){ls.classList.remove("open");bg.setAttribute("aria-expanded",false);bg.textContent="☰"}};
+addEventListener("keydown",e=>{if(e.key==="Escape"&&ls.classList.contains("open")){ls.classList.remove("open");bg.focus()}});
+$("#th").onclick=()=>{const r=document.documentElement;r.dataset.theme=r.dataset.theme==="dark"?"light":"dark"};
+const W=["Software Engineering","Cloud Computing","Applied AI","Backend Systems"],cy=$("#cyc");let wi=0;
+if(!reduce)setInterval(()=>{cy.classList.add("o");setTimeout(()=>{wi=(wi+1)%W.length;cy.textContent=W[wi];cy.classList.remove("o")},400)},2600);
+if(!reduce&&matchMedia("(hover:hover) and (min-width:861px)").matches){const pw=$("#pw");addEventListener("pointermove",e=>{pw.style.setProperty("--px",((e.clientX/innerWidth-.5)*16)+"px");pw.style.setProperty("--py",((e.clientY/innerHeight-.5)*12)+"px")})}
+</script>
+</body>
+</html>
